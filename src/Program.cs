@@ -1,10 +1,9 @@
-﻿using Logarithms;
-using LogarithmsLib;
+﻿using LogarithmsLib;
 
-namespace Calculator
+namespace Logarithms.src
 {
     class Program
-    { 
+    {
         static void Main()
         {
             Console.WriteLine("Приветствую Вас в калькуляторе логарифмов.");
@@ -21,7 +20,7 @@ namespace Calculator
             Console.WriteLine("Для выхода из калькулятора введите \"exit\"");
 
             ParseExpression parse;
-            
+
             while (true)
             {
                 Console.WriteLine();
@@ -60,7 +59,6 @@ namespace Calculator
                 }
                 else
                 {
-                    Console.WriteLine(parse.log1 + " " + parse.log2 + " " + parse.expressionOperator);
                     stringExpression = expression + " = " + expressionResult.calculationResult;
                 }
                 Console.WriteLine(stringExpression);

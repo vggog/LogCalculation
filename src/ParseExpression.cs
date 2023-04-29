@@ -1,6 +1,6 @@
 ﻿using LogarithmsLib;
 
-namespace Logarithms
+namespace Logarithms.src
 {
     class ParseExpression
     {
@@ -17,18 +17,18 @@ namespace Logarithms
             {
                 char expressionChar = expression[i];
 
-                if ( expressionChar == 'l' )
+                if (expressionChar == 'l')
                 {
                     if (log1 is null)
                         log1 = ParseLog(i);
                     else
                         log2 = ParseLog(i);
                 }
-                else if ( IsExpressionOperator(i) )
+                else if (IsExpressionOperator(i))
                 {
                     ParseOperator(expressionChar);
                 }
-                else if ( expressionChar == ' ' )
+                else if (expressionChar == ' ')
                 { }
                 else
                 {
@@ -49,11 +49,11 @@ namespace Logarithms
                 double number = ParseNum(i + 2);
                 return new Logarithm(baseLog, number);
             }
-            else if (IsValidLnStr(i) )
+            else if (IsValidLnStr(i))
             {
                 return new Logarithm(ParseNum(i + 3));
-            }   
-            else if ( IsValidLgStr(i) )
+            }
+            else if (IsValidLgStr(i))
             {
                 return new Logarithm(10, ParseNum(i + 3));
             }
@@ -95,14 +95,14 @@ namespace Logarithms
         double ParseNum(int i)
         {
             string num = "";
-            for (int j = i; expression[j] != ')'; j++) 
+            for (int j = i; expression[j] != ')'; j++)
             {
                 num += expression[j];
             }
 
             if (num == "e")
-            { 
-                return Math.E; 
+            {
+                return Math.E;
             }
             else if (num == "pi")
             {
@@ -125,7 +125,7 @@ namespace Logarithms
              * Math expression operators is:  +  -  *  /  new
              */
             char[] operators = { '+', '-', '*', '/' };
-            return operators.Contains(expression[i]) || ( expression[i] == 'n' && expression[i + 1] == 'e' && expression[i+2] == 'w' );
+            return operators.Contains(expression[i]) || expression[i] == 'n' && expression[i + 1] == 'e' && expression[i + 2] == 'w';
         }
 
         void ParseOperator(char expressionChar)

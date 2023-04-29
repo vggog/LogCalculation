@@ -1,7 +1,7 @@
 ﻿using LogarithmsLib;
 
 
-namespace Logarithms
+namespace Logarithms.src
 {
     class CalculateExpression
     {

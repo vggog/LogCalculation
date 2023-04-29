@@ -1,8 +1,8 @@
-﻿namespace Logarithms
+﻿namespace Logarithms.src
 {
     public class ExpressionException : Exception
     {
-        public ExpressionException (string message)
+        public ExpressionException(string message)
         : base(message)
         { }
     }
