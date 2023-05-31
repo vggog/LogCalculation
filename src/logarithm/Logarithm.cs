@@ -80,12 +80,37 @@
 
         public static double operator /(Logarithm log1, Logarithm log2)
         {
+            if ( log2.result == 0 )
+            {
+                throw new LogException("Деление на ноль: Логарифм в знаменателе равен нулю.");
+            }
             return log1.result / log2.result;
         }
 
         public override string ToString()
         {
-            return "log(" + ( isNaturalLog ? "e" : Convert.ToString(baseLog)) + ")(" + Convert.ToString(number) + ")";
+            string numToWrite;
+            if (number == Math.E)
+            { numToWrite = "e"; }
+            else if (number == Math.PI)
+            { numToWrite = "pi"; }
+            else
+            { numToWrite = Convert.ToString(number); }
+
+            if ( isNaturalLog || baseLog == Math.E)
+            {
+                return $"ln({numToWrite})";
+            }
+            else if ( baseLog == 10 )
+            {
+                return $"lg({numToWrite})";
+            }
+            else if ( baseLog == Math.PI )
+            {
+                return $"log(pi)({numToWrite})";
+            }
+
+            return $"log({baseLog})({numToWrite})";
         }
     }
 }

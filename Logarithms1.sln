@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logarithms", "Logarithms.csproj", "{72959431-826E-4CA1-99BF-6A75AD0975AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logarithms", "Logarithms.csproj", "{386ADA04-7471-4720-A973-641A53C88986}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{72959431-826E-4CA1-99BF-6A75AD0975AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{72959431-826E-4CA1-99BF-6A75AD0975AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{72959431-826E-4CA1-99BF-6A75AD0975AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{72959431-826E-4CA1-99BF-6A75AD0975AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{386ADA04-7471-4720-A973-641A53C88986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{386ADA04-7471-4720-A973-641A53C88986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{386ADA04-7471-4720-A973-641A53C88986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{386ADA04-7471-4720-A973-641A53C88986}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9ACD6750-9872-47C6-9339-3A38F0D1A676}
+		SolutionGuid = {7E10B60D-46F0-4AA4-8EA9-A3E210D16FF5}
 	EndGlobalSection
 EndGlobal

@@ -55,7 +55,7 @@ namespace Logarithms.src
                 CalculateExpression expressionResult = new(parse.log1, parse.log2, parse.expressionOperator);
                 if (parse.expressionOperator == "new")
                 {
-                    stringExpression = expression + " = " + expressionResult.newLog;
+                    stringExpression = expression + " = " + expressionResult.newLog + "~(" + expressionResult.newLog.Result + ")";
                 }
                 else
                 {
